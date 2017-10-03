@@ -19,5 +19,7 @@ from profiles import views as profiles_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', profiles_views.index)
+    url(r'^$', profiles_views.index),
+    url(r'^profiles/(?P<id>\d+)$', profiles_views.show)
 ]
+
